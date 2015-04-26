@@ -1,0 +1,11 @@
+default['wrapper_dynatrace']['install_type'] = 'jboss' #default, but can override with tomcat7
+default['wrapper_dynatrace']['agent_name'] = "dynatrace-agent"
+default['wrapper_dynatrace']['version'] = '6.1.0'
+default['wrapper_dynatrace']['file_type'] = 'tgz'
+default['wrapper_dynatrace']['remote_filename'] = "#{node['wrapper_dynatrace']['agent_name']}-#{node['wrapper_dynatrace']['version']}.#{node['wrapper_dynatrace']['file_type']}"
+default['wrapper_dynatrace']['s3_path'] = '/dynatrace'
+default['wrapper_dynatrace']['dest_path'] = '/usr/share'
+default['wrapper_dynatrace']['jboss']['config_file'] = '/usr/local/jboss/bin/standalone.conf'
+default['wrapper_dynatrace']['tomcat7']['config_file'] = '/etc/default/tomcat7'
+default['wrapper_dynatrace']['agent_filename'] = 'libdtagent.so'
+default['wrapper_dynatrace']['server_ip'] = 'MUST_OVERRIDE_IN_ENVIRONMENT_FILE'

@@ -14,4 +14,6 @@
    removes dynatrace agent from config file, and restart jboss/tomcat
 
 # Testing
-```rspec```
+```bash
+rspec
+```
